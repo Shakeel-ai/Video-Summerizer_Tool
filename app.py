@@ -6,7 +6,7 @@ import os
 from langchain_openai import ChatOpenAI
 
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 st.set_page_config(page_title="shakeel")
 st.title("YouTube Video Summarizer")
 
